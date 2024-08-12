@@ -1,0 +1,5 @@
+.spinner {
+  justify-self: center;
+  position: absolute;
+  color: var(--secondary) !important;
+}
