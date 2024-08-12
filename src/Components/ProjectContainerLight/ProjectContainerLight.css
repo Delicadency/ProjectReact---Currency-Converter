@@ -1,0 +1,20 @@
+.project__container--light {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--light);
+  position: relative;
+  border-radius: 2vh;
+  border: 0.3vh solid transparent;
+  background-image: linear-gradient(#fcfcfd, #fcfcfd),
+    linear-gradient(to bottom, #e8504f 80%, #ee80a7 90%, #5a04c8 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+@media (min-width: 1200px) {
+  .project__container--light {
+    width: 1024px;
+    height: 800px;
+    border-radius: 20px;
+    border: 7px solid transparent;
+  }
+}
