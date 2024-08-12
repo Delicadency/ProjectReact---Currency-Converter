@@ -1,0 +1,12 @@
+.header__container {
+  width: 36vh;
+  height: 12vh;
+  margin-top: 10vh;
+}
+@media (min-width: 1200px) {
+  .header__container {
+    width: 832px;
+    height: 90px;
+    margin-top: 50px;
+  }
+}
