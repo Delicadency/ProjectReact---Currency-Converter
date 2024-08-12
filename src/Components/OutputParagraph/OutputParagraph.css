@@ -1,0 +1,27 @@
+.output__paragraph--value {
+  height: 10vh;
+  font-size: 3.2rem;
+  font-weight: 200;
+  color: var(--text);
+  margin: 0;
+}
+.output__paragraph--currency {
+  height: 10vh;
+  font-size: 1.6rem;
+  font-weight: 200;
+  color: var(--text);
+  margin: 0 1vh;
+  align-self: self-end;
+}
+@media (min-width: 1200px) {
+  .output__paragraph--value {
+    height: 104px;
+    font-size: 96px;
+  }
+  .output__paragraph--currency {
+    height: 70px;
+    font-size: 44px;
+    margin: 0 10px;
+    transform: translateY(10px);
+  }
+}
