@@ -1,0 +1,12 @@
+.header__logo {
+  width: 9vh;
+  height: 9.5vh;
+  margin: 1vh;
+}
+@media (min-width: 1200px) {
+  .header__logo {
+    width: 81px;
+    height: 90px;
+    margin: 30px;
+  }
+}
