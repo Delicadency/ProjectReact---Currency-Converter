@@ -1,0 +1,9 @@
+.bar__button-paragraph {
+  font-size: 1.2rem;
+  margin: 0;
+}
+@media (min-width: 1200px) {
+  .bar__button-paragraph {
+    font-size: 42px;
+  }
+}
