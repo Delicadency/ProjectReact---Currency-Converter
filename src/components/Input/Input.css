@@ -1,0 +1,32 @@
+.input {
+  width: 33vh;
+  height: 6.5hv;
+  border: none;
+  outline: none;
+  caret-color: var(--accent);
+  background-color: var(--light);
+  border-radius: 2vh;
+  letter-spacing: 0.8px;
+  color: var(--accent);
+  font-size: 1.6rem;
+  text-align: center;
+  -moz-appearance: textfield;
+  appearance: none;
+}
+.input::-webkit-inner-spin-button,
+.input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.input::placeholder {
+  color: var(--accent);
+  font-variant: small-caps;
+}
+@media (min-width: 1200px) {
+  .input {
+    width: 420px;
+    height: 110px;
+    border-radius: 20px;
+    font-size: 42px;
+  }
+}
