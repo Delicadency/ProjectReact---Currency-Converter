@@ -1,0 +1,10 @@
+.section__container {
+    width: 42vh;
+    height: 30vh;
+  }
+  @media(min-width:1200px){
+    .section__container {
+        width: 795px;
+        height: 450px;
+      }
+  }
