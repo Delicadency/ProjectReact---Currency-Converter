@@ -1,0 +1,26 @@
+.bar__button {
+  width: 13.8vh;
+  height: 5vh;
+  background-color: var(--primary-shade);
+  border-color: var(--primary-shade);
+  border-width: 0.3vh 0;
+  border-style: solid;
+}
+.bar__button:first-of-type {
+  border-radius: 2vh 0 0 2vh;
+  border-width: 0.3vh 0 0.3vh 0.3vh;
+}
+.bar__button:last-of-type {
+  border-radius: 0 2vh 2vh 0;
+  border-width: 0.3vh 0.3vh 0.3vh 0;
+}
+.bar__button--active {
+  background-color: var(--secondary);
+}
+@media (min-width: 1200px) {
+  .bar__button {
+    width: 265px;
+    height: 60px;
+    border-width: 4px 0;
+  }
+}
