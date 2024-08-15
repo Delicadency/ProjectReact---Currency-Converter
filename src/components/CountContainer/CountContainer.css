@@ -1,0 +1,12 @@
+.count__container {
+  width: 19vh;
+  height: 8vh;
+  margin: 2vh 0;
+}
+@media (min-width: 1200px) {
+  .count__container {
+    width: 265px;
+    height: 125px;
+    margin: 0;
+  }
+}
