@@ -1,6 +1,7 @@
 .bar__button {
   width: 13.8vh;
   height: 5vh;
+  color: var(--light);
   background-color: var(--primary-shade);
   border-color: var(--primary-shade);
   border-width: 0.3vh 0;
