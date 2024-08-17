@@ -16,12 +16,16 @@ const Main = () => {
     setConvertedValue("0,00");
   };
 
-  const handleInputChange = (e) => {
-    setInputValue(e.target.value);
+  const handleInputChange = (event) => {
+    const value = event.target.value;
+    console.log("Input Changed:", value);
+    setInputValue(value);
   };
 
   const handleConversion = async () => {
     const amount = parseFloat(inputValue);
+    console.log("Input Value:", inputValue);
+    console.log("Converted Amount:", amount);
     if (!activeCurrency || isNaN(amount) || amount <= 0.009) {
       alert("Wybierz walutę i wprowadź poprawną kwotę.");
       return;

@@ -1,31 +1,26 @@
 import "./ButtonBar.css";
 import Button from "../Button/Button";
-import { useState } from "react";
 
-const ButtonBar = () => {
-  const [activeButton, setActiveButton] = useState("USD");
-
-  const handleButtonClick = (currency) => {
-    setActiveButton(currency);
-  };
+const ButtonBar = ({ activeCurrency, onButtonClick }) => {
   return (
     <section className="d-flex align-items-center justify-content-center bar">
       <Button
         currency="USD"
-        isActive={activeButton === "USD"}
-        onClick={handleButtonClick}
+        isActive={activeCurrency === "USD"}
+        onClick={() => onButtonClick("USD")}
       />
       <Button
         currency="EUR"
-        isActive={activeButton === "EUR"}
-        onClick={handleButtonClick}
+        isActive={activeCurrency === "EUR"}
+        onClick={() => onButtonClick("EUR")}
       />
       <Button
         currency="CHF"
-        isActive={activeButton === "CHF"}
-        onClick={handleButtonClick}
+        isActive={activeCurrency === "CHF"}
+        onClick={() => onButtonClick("CHF")}
       />
     </section>
   );
 };
+
 export default ButtonBar;

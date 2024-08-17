@@ -1,6 +1,14 @@
 import "./Input.css";
 
-const Input = ({ className, placeholder, id, inputMode, type }) => {
+const Input = ({
+  className,
+  placeholder,
+  id,
+  inputMode,
+  type,
+  inputValue,
+  onInputChange,
+}) => {
   return (
     <input
       className={className}
@@ -8,6 +16,8 @@ const Input = ({ className, placeholder, id, inputMode, type }) => {
       id={id}
       inputMode={inputMode}
       type={type}
+      value={inputValue}
+      onChange={onInputChange}
     />
   );
 };
