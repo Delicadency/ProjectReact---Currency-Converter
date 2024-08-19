@@ -16,6 +16,9 @@ const Input = ({
       inputMode={inputMode}
       type={type}
       name={name}
+      min="0.01"
+      step="0.01"
+      required
     />
   );
 };
