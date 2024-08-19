@@ -6,8 +6,7 @@ const Input = ({
   id,
   inputMode,
   type,
-  inputValue,
-  onInputChange,
+  name
 }) => {
   return (
     <input
@@ -16,8 +15,7 @@ const Input = ({
       id={id}
       inputMode={inputMode}
       type={type}
-      value={inputValue}
-      onChange={onInputChange}
+      name={name}
     />
   );
 };

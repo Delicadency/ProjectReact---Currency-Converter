@@ -7,7 +7,6 @@ import { fetchExchangeRate } from "../../services/fetchExchangeRate";
 
 const Main = () => {
   const [activeCurrency, setActiveCurrency] = useState("USD");
-  const [inputValue, setInputValue] = useState("");
   const [convertedValue, setConvertedValue] = useState("0,00");
   const [isLoading, setIsLoading] = useState(false);
 
@@ -16,14 +15,9 @@ const Main = () => {
     setConvertedValue("0,00");
   };
 
-  const handleInputChange = (event) => {
-    const value = event.target.value;
-    setInputValue(value);
-  };
-
-  const handleConversion = async () => {
-    const amount = parseFloat(inputValue);
-    if (!activeCurrency || isNaN(amount) || amount <= 0.009) {
+  const handleConversion = async (amount) => {
+    const parsedAmount = parseFloat(amount);
+    if (!activeCurrency || isNaN(parsedAmount) || parsedAmount <= 0.009) {
       alert("Wybierz walutę i wprowadź poprawną kwotę.");
       return;
     }
@@ -53,8 +47,6 @@ const Main = () => {
       <ProjectContainer
         activeCurrency={activeCurrency}
         onButtonClick={handleButtonClick}
-        inputValue={inputValue}
-        onInputChange={handleInputChange}
         onConvert={handleConversion}
       />
     </main>

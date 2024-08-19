@@ -1,7 +1,7 @@
 import "./InputContainer.css";
 import Input from "../Input/Input";
 
-const InputContainer = ({ inputValue, onInputChange }) => {
+const InputContainer = () => {
   return (
     <div className="d-flex align-items-center justify-content-center input__container">
       <Input
@@ -10,8 +10,7 @@ const InputContainer = ({ inputValue, onInputChange }) => {
         id={"input"}
         inputMode={"numeric"}
         type={"number"}
-        inputValue={inputValue}
-        onInputChange={onInputChange}
+        name={"amount"}
       />
     </div>
   );

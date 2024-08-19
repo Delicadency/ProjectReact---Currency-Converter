@@ -1,14 +1,13 @@
 import "./CountContainer.css";
 import CountButton from "../CountButton/CountButton";
 
-const CountContainer = ({ onConvert }) => {
+const CountContainer = () => {
   return (
     <section className="count__container d-flex align-items-center justify-content-center">
       <CountButton
         className={"count__button"}
-        type={"button"}
+        type={"submit"}
         text={"PRZELICZ"}
-        onConvert={onConvert}
       />
     </section>
   );

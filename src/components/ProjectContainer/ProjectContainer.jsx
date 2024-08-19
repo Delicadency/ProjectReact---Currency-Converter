@@ -1,13 +1,11 @@
 import "./ProjectContainer.css";
 import Header from "../Header/Header";
 import ButtonBar from "../ButtonBar/ButtonBar";
-import InputSection from "../InputSection/InputSection";
+import InputForm from "../InputForm/InputForm";
 
 const ProjectContainer = ({
   activeCurrency,
   onButtonClick,
-  inputValue,
-  onInputChange,
   onConvert,
 }) => {
   return (
@@ -17,9 +15,7 @@ const ProjectContainer = ({
         activeCurrency={activeCurrency}
         onButtonClick={onButtonClick}
       />
-      <InputSection
-        inputValue={inputValue}
-        onInputChange={onInputChange}
+      <InputForm
         onConvert={onConvert}
       />
     </section>
